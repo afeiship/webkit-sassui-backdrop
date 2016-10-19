@@ -9,4 +9,12 @@
   top:0;
   z-index: $inIndex;
 }
+
+@mixin webkit-sassui-overlay-black($inPostion:fixed,$inOpacity:0.4,$inIndex:100){
+  @include webkit-sassui-overlay($inPostion,$inOpacity,$inIndex,#000);
+}
+
+@mixin webkit-sassui-overlay-white($inPostion:fixed,$inOpacity:0.4,$inIndex:100){
+  @include webkit-sassui-overlay($inPostion,$inOpacity,$inIndex,#FFF);
+}
 /*webkit-sassui-overlay End*/
