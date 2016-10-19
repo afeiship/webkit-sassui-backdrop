@@ -1,0 +1,12 @@
+/*webkit-sassui-overlay Start*/
+@mixin webkit-sassui-overlay($inPostion:fixed,$inOpacity:0.4,$inIndex:100,$inColor:#000){
+  //Your mixin code goes here.
+  position: $inPostion;
+  background: rgba($inColor,$inOpacity);
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+  z-index: $inIndex;
+}
+/*webkit-sassui-overlay End*/

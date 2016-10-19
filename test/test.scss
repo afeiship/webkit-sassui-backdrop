@@ -1,0 +1,4 @@
+@import "../dist/webkit-sassui-overlay.scss";
+.test-webkit-sassui-overlay{
+  @include webkit-sassui-overlay();
+}

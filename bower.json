@@ -1,0 +1,29 @@
+{
+  "name": "webkit-sassui-overlay",
+  "description": "Webkit sass ui module for overlay/mask.",
+  "main": [
+    "dist/webkit-sassui-overlay.css",
+    "dist/webkit-sassui-overlay.scss"
+  ],
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "webkit",
+    "cssui",
+    "overlay"
+  ],
+  "homepage": "https://github.com/afeiship/webkit-cssui-absolute-center",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ]
+}

@@ -1,0 +1,11 @@
+/*webkit-sassui-overlay Start*/
+/*webkit-sassui-overlay End*/
+.test-webkit-sassui-overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.4);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 100;
+}
