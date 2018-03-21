@@ -1,0 +1,25 @@
+/*webkit-sassui-overlay Start*/
+.webkit-sassui-overlay {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.webkit-sassui-overlay[data-position=fixed] {
+  position: fixed;
+}
+
+.webkit-sassui-overlay[data-position=absolute] {
+  position: absolute;
+}
+
+.webkit-sassui-overlay[data-color=black] {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.webkit-sassui-overlay[data-color=white] {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/*webkit-sassui-overlay End*/

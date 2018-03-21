@@ -1,20 +1,26 @@
 /*webkit-sassui-overlay Start*/
-@mixin webkit-sassui-overlay($inPostion:fixed,$inOpacity:0.4,$inIndex:100,$inColor:#000){
+$webkit-sassui-overlay-position:(fixed, absolute);
+
+.webkit-sassui-overlay{
   //Your mixin code goes here.
-  position: $inPostion;
-  background: rgba($inColor,$inOpacity);
+
+  @each $value in $webkit-sassui-overlay-position{
+    &[data-position=#{$value}]{
+      position: $value;
+    }
+  }
+
+  &[data-color=black]{
+    background: rgba(#000,0.4);
+  }
+
+  &[data-color=white]{
+    background: rgba(#FFF,0.4);
+  }
+
   left:0;
   right:0;
   bottom:0;
   top:0;
-  z-index: $inIndex;
-}
-
-@mixin webkit-sassui-overlay-black($inPostion:fixed,$inOpacity:0.4,$inIndex:100){
-  @include webkit-sassui-overlay($inPostion,$inOpacity,$inIndex,#000);
-}
-
-@mixin webkit-sassui-overlay-white($inPostion:fixed,$inOpacity:0.4,$inIndex:100){
-  @include webkit-sassui-overlay($inPostion,$inOpacity,$inIndex,#FFF);
 }
 /*webkit-sassui-overlay End*/
