@@ -555,7 +555,7 @@
 
 /* z-index end */
 .webkit-sassui-backdrop {
-  transition: opacity 0.6s;
+  transition: opacity 0.5s;
 }
 
 .webkit-sassui-backdrop[data-position=fixed] {
