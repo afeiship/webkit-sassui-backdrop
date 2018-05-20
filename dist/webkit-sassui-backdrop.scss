@@ -1,0 +1,44 @@
+/*webkit-sassui-backdrop Start*/
+$webkit-sassui-backdrop-options:(
+  duration: 0.6s,
+  opacity: 0.3,
+  position-list: (fixed, absolute),
+  color-map:(
+    black: #000,
+    white: #fff
+  )
+);
+
+@import 'node_modules/webkit-sassui-short-name/dist/webkit-sassui-short-name.scss';
+
+.webkit-sassui-backdrop{
+  $duration: map-get($map: $webkit-sassui-backdrop-options, $key: duration);
+  $opacity: map-get($map: $webkit-sassui-backdrop-options, $key: opacity);
+  $position-list: map-get($map: $webkit-sassui-backdrop-options, $key: position-list);
+  $color-map: map-get($map: $webkit-sassui-backdrop-options, $key: color-map);
+
+  @each $value in $position-list{
+    &[data-position=#{$value}]{
+      position: $value;
+    }
+  }
+
+  @each $key,$value in $color-map{
+    &[data-color=#{$key}]{
+      background:$value;
+    }
+  }
+
+  &,
+  &[data-visible=true]{
+    opacity: $opacity;
+  }
+
+  &[data-visible=false]{
+    opacity: 0;
+  }
+
+  transition: opacity $duration;
+  @extend .trbl0;
+}
+/*webkit-sassui-backdrop End*/

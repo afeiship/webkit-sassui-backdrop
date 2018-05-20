@@ -1,16 +1,16 @@
 {
-  "name": "webkit-sassui-overlay",
-  "version": "0.0.0",
-  "description": "Webkit sass ui module for overlay/mask.",
-  "homepage": "https://github.com/afeiship/webkit-sassui-overlay",
+  "name": "webkit-sassui-backdrop",
+  "version": "0.0.1",
+  "description": "Webkit sass ui module for overlay/mask/backdrop.",
+  "homepage": "https://github.com/afeiship/webkit-sassui-backdrop",
   "author": {
     "name": "afei",
     "email": "1290657123@qq.com"
   },
-  "scripts":{
-    "build":"gulp"
+  "scripts": {
+    "build": "gulp"
   },
-  "main":"dist/webkit-sassui-overlay.scss",
+  "main": "dist/webkit-sassui-backdrop.scss",
   "license": "MIT",
   "devDependencies": {
     "del": "^2.2.1",
@@ -19,5 +19,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "yargs": "^4.7.1"
+  },
+  "dependencies": {
+    "webkit-sassui-short-name": "github:afeiship/webkit-sassui-short-name"
   }
 }

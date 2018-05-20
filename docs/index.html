@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>webkit-sassui-overlay</title>
+  <title>webkit-sassui-backdrop</title>
   <link rel="stylesheet" href="./test.css">
 </head>
+
 <body>
-  <div class="webkit-sassui-overlay" data-color=black data-position=fixed></div>
+  <div class="webkit-sassui-backdrop" style="top: 200px;" data-visible=false data-color=black data-position=fixed id="backdrop"></div>
+
+  <button id="show">SHOW</button>
+  <button id="hide">HIDE</button>
+  <script>
+    var el = document.getElementById('backdrop');
+    var btnShow = document.getElementById('show');
+    var btnHide = document.getElementById('hide');
+    btnShow.onclick = function () {
+      el.setAttribute('data-visible', true);
+    };
+
+    btnHide.onclick = function () {
+      el.setAttribute('data-visible', false);
+    };
+  </script>
 </body>
+
 </html>

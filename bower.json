@@ -1,9 +1,9 @@
 {
-  "name": "webkit-sassui-overlay",
-  "description": "Webkit sass ui module for overlay/mask.",
+  "name": "webkit-sassui-backdrop",
+  "description": "Webkit sass ui module for overlay/mask/backdrop.",
   "main": [
-    "dist/webkit-sassui-overlay.css",
-    "dist/webkit-sassui-overlay.scss"
+    "dist/webkit-sassui-backdrop.css",
+    "dist/webkit-sassui-backdrop.scss"
   ],
   "authors": [
     "afei"
@@ -11,10 +11,12 @@
   "license": "MIT",
   "keywords": [
     "webkit",
-    "cssui",
-    "overlay"
+    "sassui",
+    "css",
+    "component",
+    "backdrop"
   ],
-  "homepage": "https://github.com/afeiship/webkit-sassui-overlay",
+  "homepage": "https://github.com/afeiship/webkit-sassui-backdrop",
   "moduleType": [
     "amd"
   ],
