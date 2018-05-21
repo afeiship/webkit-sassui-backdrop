@@ -24,6 +24,9 @@ $webkit-sassui-backdrop-options:(
   }
 
   @keyframes fade-out {
+    from {
+      opacity: $opacity;
+    }
     to {
       opacity: 0;
     }
