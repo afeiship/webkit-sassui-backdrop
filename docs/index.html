@@ -7,18 +7,35 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>webkit-sassui-backdrop</title>
   <link rel="stylesheet" href="./test.css">
+  <style>
+  .is-paused {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  </style>
 </head>
 
 <body>
-  <div class="webkit-sassui-backdrop" style="top: 200px;" data-visible=false data-color=black data-position=fixed id="backdrop"></div>
+  <div
+  class="webkit-sassui-backdrop"
+  style="top: 200px;"
+  data-visible=false
+  hidden=true
+  data-color=black
+  data-position=fixed id="backdrop"></div>
 
   <button id="show">SHOW</button>
   <button id="hide">HIDE</button>
   <script>
+    /*
+    注意：此处的 hidden 目前必须在 JS 中控制
+    onAnimationEnd 事件中处理 hidde=true
+    */
     var el = document.getElementById('backdrop');
     var btnShow = document.getElementById('show');
     var btnHide = document.getElementById('hide');
     btnShow.onclick = function () {
+      el.hidden = false;
       el.setAttribute('data-visible', true);
     };
 

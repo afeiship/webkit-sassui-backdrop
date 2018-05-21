@@ -11,4 +11,8 @@ button{
   border: none;
   outline: none;
   margin-bottom: 20px;
+
+  &:active{
+    background: darken(#007aff, 10%);
+  }
 }

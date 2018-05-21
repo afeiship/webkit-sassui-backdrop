@@ -17,6 +17,18 @@ $webkit-sassui-backdrop-options:(
   $position-list: map-get($map: $webkit-sassui-backdrop-options, $key: position-list);
   $color-map: map-get($map: $webkit-sassui-backdrop-options, $key: color-map);
 
+  @keyframes fade-in {
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-out {
+    to {
+      opacity: 0;
+    }
+  }
+
   @each $value in $position-list{
     &[data-position=#{$value}]{
       position: $value;
@@ -29,16 +41,16 @@ $webkit-sassui-backdrop-options:(
     }
   }
 
-  &,
   &[data-visible=true]{
-    opacity: $opacity;
-  }
-
-  &[data-visible=false]{
     opacity: 0;
+    animation: fade-in 0.5s ease-in forwards;
   }
 
-  transition: opacity $duration;
+  &,
+  &[data-visible=false]{
+    animation: fade-out 0.5s ease-in forwards;
+  }
+
   @extend .trbl0;
 }
 /*webkit-sassui-backdrop End*/
