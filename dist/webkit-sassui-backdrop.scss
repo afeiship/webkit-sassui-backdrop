@@ -9,13 +9,15 @@ $webkit-sassui-backdrop-options:(
   )
 );
 
-@import 'node_modules/webkit-sassui-short-name/dist/webkit-sassui-short-name.scss';
-
 .webkit-sassui-backdrop{
   $duration: map-get($map: $webkit-sassui-backdrop-options, $key: duration);
   $opacity: map-get($map: $webkit-sassui-backdrop-options, $key: opacity);
   $position-list: map-get($map: $webkit-sassui-backdrop-options, $key: position-list);
   $color-map: map-get($map: $webkit-sassui-backdrop-options, $key: color-map);
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
 
   @keyframes fade-in {
     to {
@@ -44,16 +46,16 @@ $webkit-sassui-backdrop-options:(
     }
   }
 
+  &.visible-true,
   &[data-visible=true]{
     opacity: 0;
     animation: fade-in $duration ease-in forwards;
   }
 
   &,
+  &.visible-false,
   &[data-visible=false]{
     animation: fade-out $duration ease-in forwards;
   }
-
-  @extend .trbl0;
 }
 /*webkit-sassui-backdrop End*/
