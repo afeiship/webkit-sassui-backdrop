@@ -2,18 +2,13 @@
 $webkit-sassui-backdrop-options:(
   duration: 0.5s,
   opacity: 0.3,
-  position-list: (fixed, absolute),
-  color-map:(
-    black: #000,
-    white: #fff
-  )
+  position-list: (fixed, absolute)
 );
 
 .webkit-sassui-backdrop{
   $duration: map-get($map: $webkit-sassui-backdrop-options, $key: duration);
   $opacity: map-get($map: $webkit-sassui-backdrop-options, $key: opacity);
   $position-list: map-get($map: $webkit-sassui-backdrop-options, $key: position-list);
-  $color-map: map-get($map: $webkit-sassui-backdrop-options, $key: color-map);
   top:0;
   right:0;
   bottom:0;
@@ -21,42 +16,35 @@ $webkit-sassui-backdrop-options:(
 
   @keyframes fade-in {
     to {
-      opacity: $opacity;
+      background: rgba(#000, $opacity);
     }
   }
 
   @keyframes fade-out {
     from {
-      opacity: $opacity;
+      background: rgba(#000, $opacity);
     }
     to {
-      opacity: 0;
+      background: rgba(#000, 0);
     }
+  }
+
+  &.visible-true,
+  &[data-visible=true] {
+    background: rgba(#000, 0);
+    animation: fade-in 300ms ease-in forwards;
+  }
+
+  &,
+  &.visible-false,
+  &[data-visible=false] {
+    animation: fade-out 300ms ease-in forwards;
   }
 
   @each $value in $position-list{
     &[data-position=#{$value}]{
       position: $value;
     }
-  }
-
-  @each $key,$value in $color-map{
-    &.color-#{key},
-    &[data-color=#{$key}]{
-      background:$value;
-    }
-  }
-
-  &.visible-true,
-  &[data-visible=true]{
-    opacity: 0;
-    animation: fade-in $duration ease-in forwards;
-  }
-
-  &,
-  &.visible-false,
-  &[data-visible=false]{
-    animation: fade-out $duration ease-in forwards;
   }
 }
 /*webkit-sassui-backdrop End*/
