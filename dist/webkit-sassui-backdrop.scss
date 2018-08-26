@@ -1,7 +1,7 @@
 /*webkit-sassui-backdrop Start*/
 $webkit-sassui-backdrop-options:(
-  duration: 0.5s,
-  opacity: 0.3,
+  duration: 300ms,
+  opacity: 0.4,
   color: #000,
   position-list: (fixed, absolute)
 )!default;
@@ -11,6 +11,7 @@ $webkit-sassui-backdrop-options:(
   $opacity: map-get($map: $webkit-sassui-backdrop-options, $key: opacity);
   $color: map-get($map: $webkit-sassui-backdrop-options, $key: color);
   $position-list: map-get($map: $webkit-sassui-backdrop-options, $key: position-list);
+
   top:0;
   right:0;
   bottom:0;
@@ -44,6 +45,7 @@ $webkit-sassui-backdrop-options:(
   }
 
   @each $value in $position-list{
+    &.position-#{$value},
     &[data-position=#{$value}]{
       position: $value;
     }
