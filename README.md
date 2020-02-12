@@ -14,7 +14,7 @@ npm i -S @feizheng/webkit-sassui-backdrop
 @import 'node_modules/webkit-sassui-backdrop/dist/index.scss';
 
 // webkit
-@import '~@feizheng/webkit-sassui-moveup';
+@import '~@feizheng/webkit-sassui-backdrop';
 ```
 
 ## resources
