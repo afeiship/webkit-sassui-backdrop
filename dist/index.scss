@@ -7,10 +7,12 @@ $webkit-sassui-backdrop-options:(
 )!default;
 
 .webkit-sassui-backdrop{
+  /* prettier-ignore-start */
   $duration: map-get($map: $webkit-sassui-backdrop-options, $key: duration);
   $opacity: map-get($map: $webkit-sassui-backdrop-options, $key: opacity);
   $color: map-get($map: $webkit-sassui-backdrop-options, $key: color);
   $position-list: map-get($map: $webkit-sassui-backdrop-options, $key: position-list);
+  /* prettier-ignore-end */
 
   top:0;
   right:0;

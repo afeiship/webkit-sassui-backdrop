@@ -11,10 +11,8 @@
   "license": "MIT",
   "keywords": [
     "webkit",
-    "sassui",
-    "css",
-    "component",
-    "backdrop"
+    "cssui",
+    "sassui"
   ],
   "homepage": "https://github.com/afeiship/webkit-sassui-backdrop",
   "moduleType": [

@@ -1,17 +1,20 @@
-@import "../dist/webkit-sassui-backdrop.scss";
+@import "../dist/index.scss";
 
+.test-webkit-sassui-backdrop {
+  border: 1px solid red;
+}
 
-button{
+button {
   display: block;
   width: 100%;
-  padding:14px;
+  padding: 14px;
   background: #007aff;
   color: #fff;
   border: none;
   outline: none;
   margin-bottom: 20px;
 
-  &:active{
+  &:active {
     background: darken(#007aff, 10%);
   }
 }

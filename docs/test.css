@@ -1,5 +1,7 @@
 /*webkit-sassui-backdrop Start*/
 .webkit-sassui-backdrop {
+  /* prettier-ignore-start */
+  /* prettier-ignore-end */
   top: 0;
   right: 0;
   bottom: 0;
@@ -17,17 +19,17 @@
     background: rgba(0, 0, 0, 0.4);
   }
   to {
-    background: transparent;
+    background: rgba(0, 0, 0, 0);
   }
 }
 
 .webkit-sassui-backdrop.visible-true, .webkit-sassui-backdrop[data-visible=true] {
-  background: transparent;
-  animation: webkit-sassui-backdrop-fade-in 250ms ease-in forwards;
+  background: rgba(0, 0, 0, 0);
+  animation: webkit-sassui-backdrop-fade-in 300ms ease-in forwards;
 }
 
 .webkit-sassui-backdrop, .webkit-sassui-backdrop.visible-false, .webkit-sassui-backdrop[data-visible=false] {
-  animation: webkit-sassui-backdrop-fade-out 250ms ease-in forwards;
+  animation: webkit-sassui-backdrop-fade-out 300ms ease-in forwards;
 }
 
 .webkit-sassui-backdrop.position-fixed, .webkit-sassui-backdrop[data-position=fixed] {
@@ -39,6 +41,10 @@
 }
 
 /*webkit-sassui-backdrop End*/
+.test-webkit-sassui-backdrop {
+  border: 1px solid red;
+}
+
 button {
   display: block;
   width: 100%;
