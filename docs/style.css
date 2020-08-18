@@ -3,7 +3,7 @@
  * description: Webkit sass ui module for overlay/mask/backdrop.
  * homepage: https://github.com/afeiship/webkit-sassui-backdrop
  * version: 1.0.2
- * date: 2020-08-18T02:56:56.461Z
+ * date: 2020-08-18T05:37:05.665Z
  * license: MIT
  */
 /*webkit-sassui-backdrop Start*/
@@ -55,4 +55,19 @@
 /*webkit-sassui-backdrop End*/
 .test-webkit-sassui-backdrop {
   border: 1px solid red;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: #007aff;
+  color: #fff;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+button:active {
+  background: #0062cc;
 }
