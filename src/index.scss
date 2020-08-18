@@ -21,7 +21,7 @@ $webkit-sassui-backdrop-options:(
 
 
   &.is-transparent{
-    opacity: 0.01;
+    background: rgba($color, 0);
   }
 
   @keyframes webkit-sassui-backdrop-fade-in {

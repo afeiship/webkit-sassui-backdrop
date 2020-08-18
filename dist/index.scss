@@ -2,8 +2,8 @@
  * name: @feizheng/webkit-sassui-backdrop
  * description: Webkit sass ui module for overlay/mask/backdrop.
  * homepage: https://github.com/afeiship/webkit-sassui-backdrop
- * version: 1.0.1
- * date: 2020-08-17T10:59:50.784Z
+ * version: 1.0.2
+ * date: 2020-08-18T02:56:56.461Z
  * license: MIT
  */
 
@@ -30,7 +30,7 @@ $webkit-sassui-backdrop-options:(
 
 
   &.is-transparent{
-    opacity: 0.01;
+    background: rgba($color, 0);
   }
 
   @keyframes webkit-sassui-backdrop-fade-in {
