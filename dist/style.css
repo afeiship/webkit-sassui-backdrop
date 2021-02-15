@@ -1,0 +1,51 @@
+/*!
+ * name: @jswork/wsui-backdrop
+ * description: Webkit sass ui module for overlay/mask/backdrop.
+ * homepage: https://github.com/afeiship/wsui-backdrop
+ * version: 1.0.0
+ * date: 2021-02-16 01:29:00
+ * license: MIT
+ */
+/*wsui-backdrop Start*/
+.wsui-backdrop {
+  /* prettier-ignore-start */
+  /* prettier-ignore-end */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  .wsui-backdrop.is-transparent {
+    background: rgba(0, 0, 0, 0); }
+
+@-webkit-keyframes wsui-backdrop-fade-in {
+  to {
+    background: rgba(0, 0, 0, 0.4); } }
+
+@keyframes wsui-backdrop-fade-in {
+  to {
+    background: rgba(0, 0, 0, 0.4); } }
+
+@-webkit-keyframes wsui-backdrop-fade-out {
+  from {
+    background: rgba(0, 0, 0, 0.4); }
+  to {
+    background: rgba(0, 0, 0, 0); } }
+
+@keyframes wsui-backdrop-fade-out {
+  from {
+    background: rgba(0, 0, 0, 0.4); }
+  to {
+    background: rgba(0, 0, 0, 0); } }
+  .wsui-backdrop.visible-true, .wsui-backdrop[data-visible=true] {
+    background: rgba(0, 0, 0, 0);
+    -webkit-animation: wsui-backdrop-fade-in 300ms ease-in forwards;
+            animation: wsui-backdrop-fade-in 300ms ease-in forwards; }
+  .wsui-backdrop, .wsui-backdrop.visible-false, .wsui-backdrop[data-visible=false] {
+    -webkit-animation: wsui-backdrop-fade-out 300ms ease-in forwards;
+            animation: wsui-backdrop-fade-out 300ms ease-in forwards; }
+  .wsui-backdrop.position-fixed, .wsui-backdrop[data-position=fixed] {
+    position: fixed; }
+  .wsui-backdrop.position-absolute, .wsui-backdrop[data-position=absolute] {
+    position: absolute; }
+
+/*wsui-backdrop End*/

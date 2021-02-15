@@ -1,13 +1,13 @@
 /*!
- * name: @feizheng/webkit-sassui-backdrop
+ * name: @jswork/wsui-backdrop
  * description: Webkit sass ui module for overlay/mask/backdrop.
- * homepage: https://github.com/afeiship/webkit-sassui-backdrop
- * version: 1.0.2
- * date: 2020-08-18T05:37:05.665Z
+ * homepage: https://github.com/afeiship/wsui-backdrop
+ * version: 1.0.0
+ * date: 2021-02-16 01:29:00
  * license: MIT
  */
-/*webkit-sassui-backdrop Start*/
-.webkit-sassui-backdrop {
+/*wsui-backdrop Start*/
+.wsui-backdrop {
   /* prettier-ignore-start */
   /* prettier-ignore-end */
   top: 0;
@@ -16,17 +16,17 @@
   left: 0;
 }
 
-.webkit-sassui-backdrop.is-transparent {
+.wsui-backdrop.is-transparent {
   background: rgba(0, 0, 0, 0);
 }
 
-@keyframes webkit-sassui-backdrop-fade-in {
+@keyframes wsui-backdrop-fade-in {
   to {
     background: rgba(0, 0, 0, 0.4);
   }
 }
 
-@keyframes webkit-sassui-backdrop-fade-out {
+@keyframes wsui-backdrop-fade-out {
   from {
     background: rgba(0, 0, 0, 0.4);
   }
@@ -35,25 +35,25 @@
   }
 }
 
-.webkit-sassui-backdrop.visible-true, .webkit-sassui-backdrop[data-visible=true] {
+.wsui-backdrop.visible-true, .wsui-backdrop[data-visible=true] {
   background: rgba(0, 0, 0, 0);
-  animation: webkit-sassui-backdrop-fade-in 300ms ease-in forwards;
+  animation: wsui-backdrop-fade-in 300ms ease-in forwards;
 }
 
-.webkit-sassui-backdrop, .webkit-sassui-backdrop.visible-false, .webkit-sassui-backdrop[data-visible=false] {
-  animation: webkit-sassui-backdrop-fade-out 300ms ease-in forwards;
+.wsui-backdrop, .wsui-backdrop.visible-false, .wsui-backdrop[data-visible=false] {
+  animation: wsui-backdrop-fade-out 300ms ease-in forwards;
 }
 
-.webkit-sassui-backdrop.position-fixed, .webkit-sassui-backdrop[data-position=fixed] {
+.wsui-backdrop.position-fixed, .wsui-backdrop[data-position=fixed] {
   position: fixed;
 }
 
-.webkit-sassui-backdrop.position-absolute, .webkit-sassui-backdrop[data-position=absolute] {
+.wsui-backdrop.position-absolute, .wsui-backdrop[data-position=absolute] {
   position: absolute;
 }
 
-/*webkit-sassui-backdrop End*/
-.test-webkit-sassui-backdrop {
+/*wsui-backdrop End*/
+.test-wsui-backdrop {
   border: 1px solid red;
 }
 

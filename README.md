@@ -1,4 +1,4 @@
-# webkit-sassui-backdrop
+# wsui-backdrop
 > Webkit sass ui module for overlay/mask/backdrop.
 
 [![version][version-image]][version-url]
@@ -8,37 +8,29 @@
 
 ## installation
 ```shell
-# install
-npm i @feizheng/webkit-sassui-backdrop
-
-# update
-npm update @feizheng/webkit-sassui-backdrop
+npm i @jswork/wsui-backdrop
 ```
 
 ## usage
 ```scss
-// in sass file:
-@import 'node_modules/webkit-sassui-backdrop/dist/index.scss';
-
-// webkit
-@import '~@feizheng/webkit-sassui-backdrop';
+// use sass
+@import '~@jswork/wsui-backdrop/dist/index.scss';
+// use css
+@import '~@jswork/wsui-backdrop/dist/style.css';
 ```
 
-## documentation
-- https://afeiship.github.io/webkit-sassui-backdrop/
-
 ## license
-Code released under [the MIT license](https://github.com/afeiship/webkit-sassui-backdrop/blob/master/LICENSE.txt).
+Code released under [the MIT license](https://github.com/afeiship/wsui-backdrop/blob/master/LICENSE.txt).
 
-[version-image]: https://img.shields.io/npm/v/@feizheng/webkit-sassui-backdrop
-[version-url]: https://npmjs.org/package/@feizheng/webkit-sassui-backdrop
+[version-image]: https://img.shields.io/npm/v/@jswork/wsui-backdrop
+[version-url]: https://npmjs.org/package/@jswork/wsui-backdrop
 
-[license-image]: https://img.shields.io/npm/l/@feizheng/webkit-sassui-backdrop
-[license-url]: https://github.com/afeiship/webkit-sassui-backdrop/blob/master/LICENSE.txt
+[license-image]: https://img.shields.io/npm/l/@jswork/wsui-backdrop
+[license-url]: https://github.com/afeiship/wsui-backdrop/blob/master/LICENSE.txt
 
-[size-image]: https://img.shields.io/bundlephobia/minzip/@feizheng/webkit-sassui-backdrop
-[size-url]: https://github.com/afeiship/webkit-sassui-backdrop/blob/master/dist/webkit-sassui-backdrop.min.js
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/wsui-backdrop
+[size-url]: https://github.com/afeiship/wsui-backdrop/blob/master/dist/wsui-backdrop.min.js
 
-[download-image]: https://img.shields.io/npm/dm/@feizheng/webkit-sassui-backdrop
-[download-url]: https://www.npmjs.com/package/@feizheng/webkit-sassui-backdrop
+[download-image]: https://img.shields.io/npm/dm/@jswork/wsui-backdrop
+[download-url]: https://www.npmjs.com/package/@jswork/wsui-backdrop
 

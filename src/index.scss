@@ -1,17 +1,17 @@
-/*webkit-sassui-backdrop Start*/
-$webkit-sassui-backdrop-options:(
+/*wsui-backdrop Start*/
+$wsui-backdrop-options:(
   duration: 300ms,
   opacity: 0.4,
   color: #000,
   position-list: (fixed, absolute)
 )!default;
 
-.webkit-sassui-backdrop{
+.wsui-backdrop{
   /* prettier-ignore-start */
-  $duration: map-get($map: $webkit-sassui-backdrop-options, $key: duration);
-  $opacity: map-get($map: $webkit-sassui-backdrop-options, $key: opacity);
-  $color: map-get($map: $webkit-sassui-backdrop-options, $key: color);
-  $position-list: map-get($map: $webkit-sassui-backdrop-options, $key: position-list);
+  $duration: map-get($map: $wsui-backdrop-options, $key: duration);
+  $opacity: map-get($map: $wsui-backdrop-options, $key: opacity);
+  $color: map-get($map: $wsui-backdrop-options, $key: color);
+  $position-list: map-get($map: $wsui-backdrop-options, $key: position-list);
   /* prettier-ignore-end */
 
   top:0;
@@ -24,13 +24,13 @@ $webkit-sassui-backdrop-options:(
     background: rgba($color, 0);
   }
 
-  @keyframes webkit-sassui-backdrop-fade-in {
+  @keyframes wsui-backdrop-fade-in {
     to {
       background: rgba($color, $opacity);
     }
   }
 
-  @keyframes webkit-sassui-backdrop-fade-out {
+  @keyframes wsui-backdrop-fade-out {
     from {
       background: rgba($color, $opacity);
     }
@@ -42,13 +42,13 @@ $webkit-sassui-backdrop-options:(
   &.visible-true,
   &[data-visible=true] {
     background: rgba($color, 0);
-    animation: webkit-sassui-backdrop-fade-in $duration ease-in forwards;
+    animation: wsui-backdrop-fade-in $duration ease-in forwards;
   }
 
   &,
   &.visible-false,
   &[data-visible=false] {
-    animation: webkit-sassui-backdrop-fade-out $duration ease-in forwards;
+    animation: wsui-backdrop-fade-out $duration ease-in forwards;
   }
 
   @each $value in $position-list{
@@ -58,4 +58,4 @@ $webkit-sassui-backdrop-options:(
     }
   }
 }
-/*webkit-sassui-backdrop End*/
+/*wsui-backdrop End*/
